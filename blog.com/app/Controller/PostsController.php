@@ -64,15 +64,18 @@ class PostsController extends AppController {
         } catch (NotFoundException $e) {
             //Do something here like redirecting to first or last page.
             //$this->request->params['paging'] will give you required info.
-//            echo 1;
         }
         if($this->Session->check("session")){
             $username = $this->Session->read('session');
 //            echo $username;
             $level = $this->Post->User->findByusername($username);
             $this->set("name", $level);
+        }else
+        {
+//            $this->Session->delete('session');
+//            $this->Flash->set('Session timeout');
+//            $this->redirect('/');
         }
-//        $this->set('post', $this->paginate());
         $this->set('posts', $data);
 
     }
@@ -93,8 +96,6 @@ class PostsController extends AppController {
             $level = $this->Post->User->findByusername($username);
             $this->set("name", $level);
         }
-        echo "<pre>";
-    var_dump($posts);
         $this->set('chapters', $chapters);
         $this->set('posts', $posts);
     }
@@ -141,7 +142,7 @@ class PostsController extends AppController {
 //            throw new MethodNotAllowedException();
 //        }
 
-        if ($this->Post->delete($id)) {
+        if ($this->Post->delete($id) && $this->Post->Chapter->query("DELETE From chapters WHERE post_id = $id")) {
             $this->Flash->success(
                 __('The post with id: %s has been deleted.', h($id))
             );

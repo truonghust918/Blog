@@ -33,6 +33,10 @@ class Chapter extends Model
 {
     var $name = "Chapter";
     var $useTable = 'chapters';
+//    public $belongsTo = array('Post' => array(
+//                                                'className' => 'Post',
+//                                                'foreignKey' => 'post_id'
+//                                            ));
     public $belongsTo = 'Post';
     public function isOwnedBy($post, $user)
     {

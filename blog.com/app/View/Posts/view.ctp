@@ -21,7 +21,8 @@
                 <?php
                 echo $this->Html->link(
                     $chapter['chapters']['chap_name'],
-                    array('action' => 'view', $chapter['chapters']['id'])
+                    array('controller' => 'Chapters',
+                        'action' => 'view')
                 );
                 ?>
             </td>

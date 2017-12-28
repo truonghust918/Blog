@@ -48,68 +48,16 @@ class ChaptersController extends AppController {
     public $helpers = array('Html', 'Form','Paginator');
     public $components = array('Paginator');
     public $paginate = array();
-    public $name = "Posts";//define Controller name
-    public function index() {
-        $data = $this->Post->find('all');
-        $this->Paginator->settings = array(
-            'limit' => 10,
-            'order' => array('Post.id' => 'asc')
-        );
+    public $name = "Chapters";//define Controller name
 
-        try {
 
-            $data1 = $this->Paginator->paginate("Post");
-            $this->set("data",$data1);
-        } catch (NotFoundException $e) {
-            //Do something here like redirecting to first or last page.
-            //$this->request->params['paging'] will give you required info.
-//            echo 1;
-        }
-        if($this->Session->check("session")){
-            $username = $this->Session->read('session');
-//            echo $username;
-            $level = $this->Post-> User->findByusername($username);
-            $this->set("name", $level);
-        }
-//        $this->set('post', $this->paginate());
-        $this->set('posts', $data);
+    public function view() {
+        if($this->request->is(array('post', 'put'))){
 
+
+        $this->redirect(array('controller' => 'Chapters', 'action' => 'view'));
+    }
     }
 
-    public function view($id) {
-        if (!$id) {
-            throw new NotFoundException(__('Invalid post'));
-        }
-
-        $post = $this->Post->findById($id);
-        if (!$post) {
-            throw new NotFoundException(__('Invalid post'));
-        }
-        $this->set('post', $post);
-    }
-
-    public function edit($id = null) {
-        if (!$id) {
-            throw new NotFoundException(__('Invalid post'));
-        }
-
-        $post = $this->Post->findById($id);
-        if (!$post) {
-            throw new NotFoundException(__('Invalid post'));
-        }
-
-        if ($this->request->is(array('post', 'put'))) {
-            $this->Post->id = $id;
-            if ($this->Post->save($this->request->data)) {
-                $this->Flash->success(__('Your post has been updated.'));
-                return $this->redirect(array('action' => 'index'));
-            }
-            $this->Flash->error(__('Unable to update your post.'));
-        }
-
-        if (!$this->request->data) {
-            $this->request->data = $post;
-        }
-    }
 
 }
