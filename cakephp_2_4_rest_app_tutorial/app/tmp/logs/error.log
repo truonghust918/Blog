@@ -1,0 +1,279 @@
+2013-12-12 17:01:54 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /rest_tutorial/users/login
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-12-12 17:04:46 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\rest_tutorial\app\Controller\RestPhonesController.php, line 9]
+2013-12-12 17:04:46 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /rest_tutorial/rest_phones
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\res...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\res...', 9, Array)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\res...', 9, Array)
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 17:05:25 Error: [MissingViewException] View file "C:\wamp\www\rest_tutorial\app\View\RestPhones\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\rest_tutorial\\app\\View\\RestPhones\\index.ctp',
+)
+Request URL: /rest_tutorial/rest_phones
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RestPhonesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-12 17:05:43 Error: [MissingActionException] Action RestPhonesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'RestPhonesController',
+  'action' => '1',
+)
+Request URL: /rest_tutorial/rest_phones/1.json
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RestPhonesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 17:13:50 Error: [MissingActionException] Action RestPhonesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'RestPhonesController',
+  'action' => '1',
+)
+Request URL: /rest_tutorial/rest_phones/1.json
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RestPhonesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 17:15:10 Error: [MissingActionException] Action RestPhonesController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'RestPhonesController',
+  'action' => '1',
+)
+Request URL: /rest_tutorial/rest_phones/1.json
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RestPhonesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 17:27:56 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in [C:\wamp\www\rest_tutorial\app\Controller\ClientController.php, line 7]
+2013-12-12 17:27:56 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'
+Request URL: /rest_tutorial/client/request_index
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\res...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\res...', 7, Array)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\res...', 7, Array)
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 17:28:14 Error: Fatal Error (4): syntax error, unexpected 'request_index' (T_STRING), expecting variable (T_VARIABLE) in [C:\wamp\www\rest_tutorial\app\Controller\ClientController.php, line 7]
+2013-12-12 17:28:14 Error: [FatalErrorException] syntax error, unexpected 'request_index' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /rest_tutorial/client/request_index
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\res...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\res...', 7, Array)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\res...', 7, Array)
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 17:28:47 Error: Fatal Error (4): syntax error, unexpected 'request_index' (T_STRING), expecting variable (T_VARIABLE) in [C:\wamp\www\rest_tutorial\app\Controller\ClientController.php, line 7]
+2013-12-12 17:28:47 Error: [FatalErrorException] syntax error, unexpected 'request_index' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /rest_tutorial/client/request_index
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\res...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\res...', 7, Array)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\res...', 7, Array)
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 17:29:06 Error: Fatal Error (1): Class 'HttpSocket' not found in [C:\wamp\www\rest_tutorial\app\Controller\ClientController.php, line 13]
+2013-12-12 17:29:06 Error: [FatalErrorException] Class 'HttpSocket' not found
+Request URL: /rest_tutorial/client/request_index
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'HttpSock...', 'C:\wamp\www\res...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HttpSock...', 'C:\wamp\www\res...', 13, Array)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'HttpSock...', 'C:\wamp\www\res...', 13, Array)
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 17:29:09 Error: Fatal Error (1): Class 'HttpSocket' not found in [C:\wamp\www\rest_tutorial\app\Controller\ClientController.php, line 13]
+2013-12-12 17:29:09 Error: [FatalErrorException] Class 'HttpSocket' not found
+Request URL: /rest_tutorial/client/request_index
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'HttpSock...', 'C:\wamp\www\res...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'HttpSock...', 'C:\wamp\www\res...', 13, Array)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'HttpSock...', 'C:\wamp\www\res...', 13, Array)
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 17:29:34 Error: [MissingActionException] Action ClientController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientController',
+  'action' => 'index',
+)
+Request URL: /rest_tutorial/client/index.php?img=pngFolder
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 17:29:34 Error: [MissingActionException] Action ClientController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientController',
+  'action' => 'index',
+)
+Request URL: /rest_tutorial/client/index.php?img=gifLogo
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 17:29:34 Error: [MissingActionException] Action ClientController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientController',
+  'action' => 'index',
+)
+Request URL: /rest_tutorial/client/index.php?img=pngWrench
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 17:29:34 Error: [MissingActionException] Action ClientController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientController',
+  'action' => 'index',
+)
+Request URL: /rest_tutorial/client/index.php?img=favicon
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 17:29:34 Error: [MissingActionException] Action ClientController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientController',
+  'action' => 'index',
+)
+Request URL: /rest_tutorial/client/index.php?img=pngPlugin
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 17:29:34 Error: [MissingActionException] Action ClientController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientController',
+  'action' => 'index',
+)
+Request URL: /rest_tutorial/client/index.php?img=pngFolderGo
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 17:29:34 Error: [MissingActionException] Action ClientController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientController',
+  'action' => 'index',
+)
+Request URL: /rest_tutorial/client/index.php?img=favicon
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 20:12:41 Error: Fatal Error (4): syntax error, unexpected '.', expecting ')' in [C:\wamp\www\rest_tutorial\app\Controller\ClientController.php, line 11]
+2013-12-12 20:12:41 Error: [FatalErrorException] syntax error, unexpected '.', expecting ')'
+Request URL: /rest_tutorial/client/request_index
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\res...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\res...', 11, Array)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\res...', 11, Array)
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 20:12:53 Error: Fatal Error (1): Call to a member function url() on a non-object in [C:\wamp\www\rest_tutorial\app\Controller\ClientController.php, line 11]
+2013-12-12 20:12:53 Error: [FatalErrorException] Call to a member function url() on a non-object
+Request URL: /rest_tutorial/client/request_index
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\res...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\res...', 11, Array)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\res...', 11, Array)
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-12 22:27:59 Error: [MissingActionException] Action RestPhonesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'RestPhonesController',
+  'action' => 'add',
+)
+Request URL: /rest_tutorial/rest_phones.json
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RestPhonesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 22:27:59 Error: [MissingViewException] View file "C:\wamp\www\rest_tutorial\app\View\Client\request_add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\rest_tutorial\\app\\View\\Client\\request_add.ctp',
+)
+Request URL: /rest_tutorial/client/request_add
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-12 22:28:53 Error: [MissingViewException] View file "C:\wamp\www\rest_tutorial\app\View\Client\request_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\rest_tutorial\\app\\View\\Client\\request_edit.ctp',
+)
+Request URL: /rest_tutorial/client/request_edit/1
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-12-12 22:33:20 Error: [MissingActionException] Action RestPhonesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'RestPhonesController',
+  'action' => 'add',
+)
+Request URL: /rest_tutorial/rest_phones.json
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RestPhonesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 22:34:32 Error: [MissingActionException] Action RestPhonesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'RestPhonesController',
+  'action' => 'add',
+)
+Request URL: /rest_tutorial/rest_phones.json
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RestPhonesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-12-12 23:00:08 Error: [MissingActionException] Action ClientController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ClientController',
+  'action' => 'index',
+)
+Request URL: /rest_tutorial/client/
+Stack Trace:
+#0 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\rest_tutorial\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ClientController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\rest_tutorial\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
